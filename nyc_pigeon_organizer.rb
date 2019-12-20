@@ -23,10 +23,10 @@ def nyc_pigeon_organizer(data)
   end
   data[:color].each do |color, names|
     names.each do |name|
+  binding.pry
       new_hash[color][name] << data[color]
     end
   end
-  binding.pry
 return new_hash
 end
 
