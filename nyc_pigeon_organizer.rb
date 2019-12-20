@@ -16,6 +16,11 @@ def nyc_pigeon_organizer(data)
       :lives => []
     }
   end
+  data[:lives].each do |location, names|
+    names.each do |name|
+    new_hash[name][:lives] = location
+    end
+  end
   binding.pry
 return new_hash
 end
