@@ -26,7 +26,7 @@ def nyc_pigeon_organizer(data)
       new_hash[name][:color] << color
     end
   end
-  binding.pry
+  # binding.pry
 return new_hash
 end
 
